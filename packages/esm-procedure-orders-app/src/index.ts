@@ -13,7 +13,7 @@ import procedureRejectReasonModal from './procedures-ordered/reject-reason/proce
 import PostProcedureForm from './form/post-procedures/post-procedure-form.component';
 import PrintPreviewModal from './print/print-procedure-results.component';
 
-const moduleName = '@kenyaemr/esm-procedure-orders-app';
+const moduleName = '@thrustdevs/esm-procedure-orders-app';
 
 const options = {
   featureName: 'esm-procedure-orders-app',

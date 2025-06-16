@@ -44,7 +44,7 @@ const ResultFormField: React.FC<ResultFormFieldProps> = ({ concept, control, err
               {...field}
               type={concept.datatype.display === 'Numeric' ? 'number' : 'text'}
               labelText={
-                concept?.display + (concept.datatype.display === 'Numeric' ? printValueRange(concept) ?? '' : '')
+                concept?.display + (concept.datatype.display === 'Numeric' ? (printValueRange(concept) ?? '') : '')
               }
               autoFocus
             />
@@ -96,7 +96,7 @@ const ResultFormField: React.FC<ResultFormFieldProps> = ({ concept, control, err
                     {...field}
                     type={member.datatype.display === 'Numeric' ? 'number' : 'text'}
                     labelText={
-                      member?.display + (member.datatype.display === 'Numeric' ? printValueRange(member) ?? '' : '')
+                      member?.display + (member.datatype.display === 'Numeric' ? (printValueRange(member) ?? '') : '')
                     }
                     autoFocus={index === 0}
                   />

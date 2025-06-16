@@ -52,7 +52,7 @@ export function useImagingOrderStats(fulfillerStatus: string) {
   }, [data, fulfillerStatus, radiologyConceptClassUuid]);
 
   const count = useMemo(
-    () => (fulfillerStatus != null ? radiologyOrders?.length ?? 0 : 0),
+    () => (fulfillerStatus != null ? (radiologyOrders?.length ?? 0) : 0),
     [fulfillerStatus, radiologyOrders],
   );
 

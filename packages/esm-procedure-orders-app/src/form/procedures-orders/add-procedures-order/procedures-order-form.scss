@@ -1,7 +1,7 @@
 @use '@carbon/styles/scss/type';
 @use '@carbon/styles/scss/spacing';
 @use '@carbon/colors';
-@import '@openmrs/esm-styleguide/src/vars';
+@use '@openmrs/esm-styleguide/src/vars' as vars;
 
 .orderForm {
   flex-grow: 1;
@@ -70,7 +70,7 @@
 
   .buttonSet {
     padding: spacing.$spacing-06 spacing.$spacing-05;
-    background-color: $ui-02;
+    background-color: vars.$ui-02;
   }
 
   .errorContainer {

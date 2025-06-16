@@ -1,4 +1,4 @@
-name: KenyaEMR CI
+name: ThrustEMR CI
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 
 env:
   TURBO_API: 'http://127.0.0.1:9080'
-  TURBO_TOKEN: ${{ secrets.TURBO_SERVER_TOKEN }}
+  TURBO_TOKEN: 'turbo-token'
   TURBO_TEAM: ${{ github.repository_owner }}
 
 jobs:
@@ -86,7 +86,7 @@ jobs:
         run: yarn install --immutable
 
       - name: Version
-        run: yarn workspaces foreach --worktree --topological --exclude @kenyaemr/esm-orders-app version "$(node -e "console.log(require('semver').inc(require('./package.json').version, 'patch'))")-pre.${{ github.run_number }}"
+        run: yarn workspaces foreach --worktree --topological --exclude @thrustdevs/esm-orders-app version "$(node -e "console.log(require('semver').inc(require('./package.json').version, 'patch'))")-pre.${{ github.run_number }}"
 
       - name: Build
         run: yarn turbo run build --concurrency=5

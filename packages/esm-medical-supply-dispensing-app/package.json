@@ -1,5 +1,5 @@
 {
-  "name": "@kenyaemr/esm-medical-supply-dispensing-app",
+  "name": "@thrustdevs/esm-medical-supply-dispensing-app",
   "version": "4.0.5",
   "description": "Medical Supply Dispensing app for KenyaEMR",
   "browser": "dist/kenyaemr-esm-medical-supply-dispensing-app.js",
