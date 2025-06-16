@@ -1,9 +1,9 @@
 @use '@carbon/styles/scss/spacing';
 @use '@carbon/styles/scss/type';
-@import '~@openmrs/esm-styleguide/src/vars';
+@use '@openmrs/esm-styleguide/src/vars' as vars;
 
 .tileContainer {
-  border: 0.0625rem solid $ui-03;
+  border: 0.0625rem solid vars.$ui-03;
   flex-grow: 1;
   height: 7.875rem;
   padding: 0 spacing.$spacing-05;

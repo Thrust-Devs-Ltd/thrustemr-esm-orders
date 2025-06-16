@@ -13,7 +13,7 @@ interface PrintableReportProps {
 
 const PrintableReport: React.FC<PrintableReportProps> = ({ approvedOrders }) => {
   const { t } = useTranslation();
-  const { logo } = useConfig({ externalModuleName: '@kenyaemr/esm-login-app' });
+  const { logo } = useConfig({ externalModuleName: '@thrustdevs/esm-login-app' });
   const { sessionLocation, user } = useSession();
   const location = sessionLocation?.display;
 
@@ -43,8 +43,8 @@ const PrintableReport: React.FC<PrintableReportProps> = ({ approvedOrders }) => 
               {approvedOrders?.patient?.person?.gender === 'M'
                 ? ' Male'
                 : approvedOrders?.patient?.person?.gender === 'F'
-                ? ' Female'
-                : ' Unknown'}
+                  ? ' Female'
+                  : ' Unknown'}
             </p>
             <p className={styles.itemLabel}>
               {t('orderDate', 'Order date')} {formatDate(new Date(approvedOrders?.dateActivated))}

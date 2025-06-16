@@ -1,4 +1,5 @@
 @use '@carbon/styles/scss/spacing';
+@use '@openmrs/esm-styleguide/src/vars' as vars;
 
 .container {
   display: flex;
@@ -21,12 +22,12 @@
 }
 
 .activeMedicationsContainer {
-  border: 1px solid $ui-03;
+  border: 1px solid vars.$ui-03;
 }
 
 .tablet {
   padding: 1.5rem 1rem;
-  background-color: $ui-02;
+  background-color: vars.$ui-02;
 }
 
 .desktop {

@@ -41,8 +41,8 @@ const PrintableReport: React.FC<PrintableReportProps> = ({ completedOrder, order
               {completedOrder?.patient?.person?.gender === 'M'
                 ? ' Male'
                 : completedOrder?.patient?.person?.gender === 'F'
-                ? ' Female'
-                : ' Unknown'}
+                  ? ' Female'
+                  : ' Unknown'}
             </p>
             <p className={styles.itemLabel}>
               {t('orderDate', 'Order date')}:{' '}

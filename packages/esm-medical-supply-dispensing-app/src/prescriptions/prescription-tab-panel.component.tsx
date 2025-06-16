@@ -114,12 +114,12 @@ const PrescriptionTabPanel: React.FC<PrescriptionTabPanelProps> = ({ searchTerm,
                                 {cell.id.endsWith('created')
                                   ? formatDatetime(parseDate(cell.value))
                                   : cell.id.endsWith('patient')
-                                  ? cell.value.name
-                                  : cell.id.endsWith('status')
-                                  ? cell.value
-                                    ? t(cell.value)
-                                    : '--'
-                                  : cell.value}
+                                    ? cell.value.name
+                                    : cell.id.endsWith('status')
+                                      ? cell.value
+                                        ? t(cell.value)
+                                        : '--'
+                                      : cell.value}
                               </TableCell>
                             ))}
                           </TableExpandRow>

@@ -1,5 +1,5 @@
 {
-  "name": "@kenyaemr/esm-procedure-orders-app",
+  "name": "@thrustdevs/esm-procedure-orders-app",
   "version": "4.0.5",
   "description": "Procedure Orders app for KenyaEMR",
   "browser": "dist/kenyaemr-esm-procedure-orders-app.js",

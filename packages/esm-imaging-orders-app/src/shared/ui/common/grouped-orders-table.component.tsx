@@ -67,8 +67,8 @@ const GroupedOrdersTable: React.FC<GroupedOrdersTableProps> = (props) => {
         patient?.orders[0]?.patient?.person?.gender === 'M'
           ? t('male', 'Male')
           : patient?.orders[0]?.patient?.person?.gender === 'F'
-          ? t('female', 'Female')
-          : patient?.orders[0]?.patient?.person?.gender,
+            ? t('female', 'Female')
+            : patient?.orders[0]?.patient?.person?.gender,
       orders: patient.orders,
       totalOrders: patient.orders?.length,
       fulfillerStatus: patient.orders[0].fulfillerStatus,
